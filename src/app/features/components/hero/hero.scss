@@ -60,19 +60,21 @@ blockquote {
 	}
 
 	h1 {
-		max-width: 17rem;
+		max-width: none;
+		width: 100%;
 		font-size: clamp(2.05rem, 12vw, 3rem);
 		line-height: 1.02;
 	}
 
 	.hero__subtitle {
-		max-width: 18.5rem;
+		max-width: none;
+		width: 100%;
 		margin: 0.65rem 0 1.55rem;
 		font-size: 0.86rem;
 	}
 
 	blockquote {
-		width: min(100%, 20rem);
+		width: 100%;
 		padding: 0.72rem 0.82rem;
 		font-size: 0.84rem;
 	}

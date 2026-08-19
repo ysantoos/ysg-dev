@@ -8,6 +8,12 @@ export interface UiCopy {
     courses: string;
     contact: string;
   };
+  sections: {
+    aboutMe: string;
+  };
+  content: {
+    unavailable: string;
+  };
   language: {
     menu: string;
     select: string;
@@ -22,6 +28,12 @@ const UI_COPY: Record<Language, UiCopy> = {
       courses: 'Courses',
       contact: 'Contact',
     },
+    sections: {
+      aboutMe: 'ABOUT_ME',
+    },
+    content: {
+      unavailable: 'Content unavailable.',
+    },
     language: {
       menu: 'Open navigation menu',
       select: 'Select language',
@@ -33,6 +45,12 @@ const UI_COPY: Record<Language, UiCopy> = {
       about: 'Acerca',
       courses: 'Cursos',
       contact: 'Contacto',
+    },
+    sections: {
+      aboutMe: 'SOBRE_MI',
+    },
+    content: {
+      unavailable: 'Contenido no disponible.',
     },
     language: {
       menu: 'Abrir menu de navegacion',

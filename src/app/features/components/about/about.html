@@ -1,0 +1,22 @@
+<section class="about" id="about">
+  <div class="site-container about__inner">
+    <h2 class="about__title">
+      <span class="about__index">01 //</span>
+      {{ ui.copy().sections.aboutMe }}
+    </h2>
+
+    <div class="about__card">
+      @if (vm$ | async; as vm) {
+        @if (vm.loading) {
+          <p class="about__text about__text--muted">...</p>
+        } @else if (vm.error) {
+          <p class="about__text about__text--muted">{{ ui.copy().content.unavailable }}</p>
+        } @else if (vm.about; as about) {
+          <p class="about__text">
+            {{ about.description[languageService.currentLanguage()] }}
+          </p>
+        }
+      }
+    </div>
+  </div>
+</section>
