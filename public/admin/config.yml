@@ -6,15 +6,22 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+
   - name: "portfolio"
     label: "Portfolio"
 
     files:
+
+      # ========================================
+      # HERO
+      # ========================================
+
       - name: "hero"
         label: "Hero"
         file: "public/content/hero.json"
 
         fields:
+
           - label: "Nombre"
             name: "name"
             widget: "string"
@@ -22,7 +29,9 @@ collections:
           - label: "Subtítulo"
             name: "subtitle"
             widget: "object"
+
             fields:
+
               - label: "English"
                 name: "en"
                 widget: "string"
@@ -34,11 +43,214 @@ collections:
           - label: "Frase"
             name: "quote"
             widget: "object"
+
             fields:
+
               - label: "English"
                 name: "en"
-                widget: "string"
+                widget: "text"
 
               - label: "Español"
                 name: "es"
+                widget: "text"
+
+
+      # ========================================
+      # ABOUT ME
+      # ========================================
+
+      - name: "about"
+        label: "About Me"
+        file: "public/content/about.json"
+
+        fields:
+
+          - label: "Descripción"
+            name: "description"
+            widget: "object"
+
+            fields:
+
+              - label: "English"
+                name: "en"
+                widget: "text"
+
+              - label: "Español"
+                name: "es"
+                widget: "text"
+
+
+      # ========================================
+      # CORE TOOLKIT
+      # ========================================
+
+      - name: "skills"
+        label: "Core Toolkit"
+        file: "public/content/skills.json"
+
+        fields:
+
+          - label: "Categorías"
+            name: "categories"
+            widget: "list"
+
+            fields:
+
+              - label: "Categoría"
+                name: "name"
                 widget: "string"
+
+              - label: "Skills"
+                name: "skills"
+                widget: "list"
+
+                fields:
+
+                  - label: "Nombre"
+                    name: "name"
+                    widget: "string"
+
+                  - label: "Color"
+                    name: "color"
+                    widget: "select"
+
+                    options:
+
+                      - label: "Orange"
+                        value: "orange"
+
+                      - label: "Blue"
+                        value: "blue"
+
+                      - label: "Purple"
+                        value: "purple"
+
+                      - label: "Green"
+                        value: "green"
+
+                      - label: "Cyan"
+                        value: "cyan"
+
+
+      # ========================================
+      # COURSES & CERTIFICATIONS
+      # ========================================
+
+      - name: "courses"
+        label: "Courses & Certifications"
+        file: "public/content/courses.json"
+
+        fields:
+
+          - label: "Cursos y certificaciones"
+            name: "items"
+            widget: "list"
+
+            fields:
+
+              - label: "Título"
+                name: "title"
+                widget: "string"
+
+              - label: "Institución"
+                name: "institution"
+                widget: "string"
+
+              - label: "Año"
+                name: "year"
+                widget: "number"
+                value_type: "int"
+
+              - label: "Color"
+                name: "color"
+                widget: "select"
+
+                options:
+
+                  - label: "Orange"
+                    value: "orange"
+
+                  - label: "Blue"
+                    value: "blue"
+
+                  - label: "Purple"
+                    value: "purple"
+
+                  - label: "Green"
+                    value: "green"
+
+                  - label: "Cyan"
+                    value: "cyan"
+
+
+      # ========================================
+      # GET IN TOUCH
+      # ========================================
+
+      - name: "contact"
+        label: "Get In Touch"
+        file: "public/content/contact.json"
+
+        fields:
+
+          - label: "Descripción"
+            name: "description"
+            widget: "object"
+
+            fields:
+
+              - label: "English"
+                name: "en"
+                widget: "text"
+
+              - label: "Español"
+                name: "es"
+                widget: "text"
+
+          - label: "GitHub"
+            name: "github"
+            widget: "object"
+
+            fields:
+
+              - label: "URL"
+                name: "url"
+                widget: "string"
+
+              - label: "Descripción"
+                name: "description"
+                widget: "object"
+
+                fields:
+
+                  - label: "English"
+                    name: "en"
+                    widget: "string"
+
+                  - label: "Español"
+                    name: "es"
+                    widget: "string"
+
+          - label: "LinkedIn"
+            name: "linkedin"
+            widget: "object"
+
+            fields:
+
+              - label: "URL"
+                name: "url"
+                widget: "string"
+
+              - label: "Descripción"
+                name: "description"
+                widget: "object"
+
+                fields:
+
+                  - label: "English"
+                    name: "en"
+                    widget: "string"
+
+                  - label: "Español"
+                    name: "es"
+                    widget: "string"

@@ -1,0 +1,146 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "color": "orange"
+        },
+        {
+          "name": "Python",
+          "color": "blue"
+        },
+        {
+          "name": "TypeScript",
+          "color": "purple"
+        },
+        {
+          "name": "Java",
+          "color": "green"
+        },
+        {
+          "name": "C#",
+          "color": "purple"
+        },
+        {
+          "name": "Go",
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "skills": [
+        {
+          "name": "React",
+          "color": "blue"
+        },
+        {
+          "name": "Angular",
+          "color": "orange"
+        },
+        {
+          "name": "Vue.js",
+          "color": "green"
+        },
+        {
+          "name": "HTML5",
+          "color": "orange"
+        },
+        {
+          "name": "CSS3",
+          "color": "blue"
+        },
+        {
+          "name": "Tailwind",
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        {
+          "name": "Node.js",
+          "color": "green"
+        },
+        {
+          "name": "Express",
+          "color": "purple"
+        },
+        {
+          "name": ".NET",
+          "color": "blue"
+        },
+        {
+          "name": "Spring Boot",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "skills": [
+        {
+          "name": "Docker",
+          "color": "blue"
+        },
+        {
+          "name": "Kubernetes",
+          "color": "cyan"
+        },
+        {
+          "name": "AWS",
+          "color": "orange"
+        },
+        {
+          "name": "Azure",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "color": "blue"
+        },
+        {
+          "name": "MySQL",
+          "color": "orange"
+        },
+        {
+          "name": "MongoDB",
+          "color": "green"
+        },
+        {
+          "name": "Redis",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        {
+          "name": "Git",
+          "color": "orange"
+        },
+        {
+          "name": "GitHub",
+          "color": "purple"
+        },
+        {
+          "name": "Figma",
+          "color": "purple"
+        },
+        {
+          "name": "Postman",
+          "color": "orange"
+        }
+      ]
+    }
+  ]
+}

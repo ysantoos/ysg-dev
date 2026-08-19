@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "title": "AWS Certified Solutions Architect",
+            "institution": "Amazon Web Services",
+            "year": 2024,
+            "color": "orange"
+        },
+        {
+            "title": "Full Stack Web Development",
+            "institution": "Coursera / Meta",
+            "year": 2023,
+            "color": "blue"
+        },
+        {
+            "title": "Advanced React & State Architecture",
+            "institution": "Udemy / Frontend Masters",
+            "year": 2023,
+            "color": "purple"
+        }
+    ]
+}

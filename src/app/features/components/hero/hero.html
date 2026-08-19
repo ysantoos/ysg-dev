@@ -1,0 +1,15 @@
+@if (hero$ | async; as hero) {
+  <section class="hero">
+
+    <h1>{{ hero.name }}</h1>
+
+    <p>
+      {{ hero.subtitle[languageService.currentLanguage()] }}
+    </p>
+
+    <blockquote>
+      {{ hero.quote[languageService.currentLanguage()] }}
+    </blockquote>
+
+  </section>
+}
