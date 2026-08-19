@@ -6,13 +6,39 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "test"
-    label: "Test"
+  - name: "portfolio"
+    label: "Portfolio"
+
     files:
-      - label: "Información"
-        name: "info"
-        file: "content/info.json"
+      - name: "hero"
+        label: "Hero"
+        file: "public/content/hero.json"
+
         fields:
-          - label: "Título"
-            name: "title"
+          - label: "Nombre"
+            name: "name"
             widget: "string"
+
+          - label: "Subtítulo"
+            name: "subtitle"
+            widget: "object"
+            fields:
+              - label: "English"
+                name: "en"
+                widget: "string"
+
+              - label: "Español"
+                name: "es"
+                widget: "string"
+
+          - label: "Frase"
+            name: "quote"
+            widget: "object"
+            fields:
+              - label: "English"
+                name: "en"
+                widget: "string"
+
+              - label: "Español"
+                name: "es"
+                widget: "string"
