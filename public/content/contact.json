@@ -1,0 +1,20 @@
+{
+  "github": {
+    "url": "https://github.com/ysantoos",
+    "description": {
+      "en": "My open-source portfolio, scripts & tools.",
+      "es": "GITHUB"
+    }
+  },
+  "linkedin": {
+    "url": "https://www.linkedin.com/in/ysantoos/?",
+    "description": {
+      "en": "Professional experience & corporate networking.",
+      "es": "Experiencia profesional y red de contactos empresariales."
+    }
+  },
+  "description": {
+    "en": "Hi",
+    "es": "Hola"
+  }
+}
