@@ -10,6 +10,7 @@ export interface UiCopy {
   };
   sections: {
     aboutMe: string;
+    coreToolkit: string;
   };
   content: {
     unavailable: string;
@@ -30,6 +31,7 @@ const UI_COPY: Record<Language, UiCopy> = {
     },
     sections: {
       aboutMe: 'ABOUT_ME',
+      coreToolkit: 'CORE_TOOLKIT',
     },
     content: {
       unavailable: 'Content unavailable.',
@@ -48,6 +50,7 @@ const UI_COPY: Record<Language, UiCopy> = {
     },
     sections: {
       aboutMe: 'SOBRE_MI',
+      coreToolkit: 'HERRAMIENTAS',
     },
     content: {
       unavailable: 'Contenido no disponible.',

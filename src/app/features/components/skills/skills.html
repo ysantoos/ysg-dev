@@ -1,0 +1,26 @@
+<section class="skills" aria-labelledby="core-toolkit-title">
+  <h3 class="skills__title" id="core-toolkit-title">{{ ui.copy().sections.coreToolkit }}</h3>
+
+  @if (vm$ | async; as vm) {
+    @if (vm.loading) {
+      <p class="skills__status">...</p>
+    } @else if (vm.error) {
+      <p class="skills__status">{{ ui.copy().content.unavailable }}</p>
+    } @else if (vm.skills; as skills) {
+      <div class="skills__categories">
+        @for (category of skills.categories; track category.name) {
+          <div class="skills__category">
+            <h4 class="skills__category-name">{{ category.name }}</h4>
+            <ul class="skills__list" role="list">
+              @for (skill of category.skills; track skill.name) {
+                <li class="skills__item">
+                  <span class="skill-badge" [ngClass]="badgeVariant(skill.color)">{{ skill.name }}</span>
+                </li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+    }
+  }
+</section>

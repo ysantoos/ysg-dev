@@ -9,6 +9,11 @@
 	gap: clamp(1.1rem, 2.4vw, 1.75rem);
 }
 
+.about__layout {
+	display: grid;
+	gap: clamp(1rem, 2.4vw, 1.75rem);
+}
+
 .about__title {
 	display: flex;
 	align-items: baseline;
@@ -36,7 +41,6 @@
 
 .about__card {
 	width: 100%;
-	max-width: 41.5rem;
 	padding: clamp(1.05rem, 2.5vw, 1.6rem);
 	background: var(--color-surface);
 	border: 1px solid var(--color-border);
@@ -49,6 +53,13 @@
 
 .about__text--muted {
 	color: var(--color-muted);
+}
+
+@media (min-width: 48rem) {
+	.about__layout {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+		align-items: start;
+	}
 }
 
 @media (max-width: 42rem) {
@@ -68,7 +79,6 @@
 	}
 
 	.about__card {
-		max-width: none;
 		padding: 1.15rem 1.05rem;
 		border-radius: 0.5rem;
 	}

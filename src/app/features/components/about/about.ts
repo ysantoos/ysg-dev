@@ -4,6 +4,7 @@ import { catchError, map, of, startWith } from 'rxjs';
 import { AboutContent, ContentService } from '../../../../services/content.service';
 import { LanguageService } from '../../../../services/language.service';
 import { UiTranslationsService } from '../../../../services/ui-translations.service';
+import { Skills } from '../skills/skills';
 
 interface AboutViewModel {
   about: AboutContent | null;
@@ -14,7 +15,7 @@ interface AboutViewModel {
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, Skills],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
