@@ -12,6 +12,12 @@ export interface UiCopy {
     aboutMe: string;
     coreToolkit: string;
     coursesAndCerts: string;
+    getInTouch: string;
+  };
+  contact: {
+    linksLabel: string;
+    githubAriaLabel: string;
+    linkedinAriaLabel: string;
   };
   content: {
     unavailable: string;
@@ -34,6 +40,12 @@ const UI_COPY: Record<Language, UiCopy> = {
       aboutMe: 'ABOUT_ME',
       coreToolkit: 'CORE_TOOLKIT',
       coursesAndCerts: 'COURSES_&_CERTS',
+      getInTouch: 'GET_IN_TOUCH',
+    },
+    contact: {
+      linksLabel: 'Primary contact links',
+      githubAriaLabel: 'Visit GitHub profile',
+      linkedinAriaLabel: 'Visit LinkedIn profile',
     },
     content: {
       unavailable: 'Content unavailable.',
@@ -54,6 +66,12 @@ const UI_COPY: Record<Language, UiCopy> = {
       aboutMe: 'SOBRE_MI',
       coreToolkit: 'HERRAMIENTAS',
       coursesAndCerts: 'CURSOS_Y_CERTS',
+      getInTouch: 'CONTACTO',
+    },
+    contact: {
+      linksLabel: 'Canales principales de contacto',
+      githubAriaLabel: 'Visitar perfil de GitHub',
+      linkedinAriaLabel: 'Visitar perfil de LinkedIn',
     },
     content: {
       unavailable: 'Contenido no disponible.',

@@ -46,6 +46,17 @@ export interface CoursesContent {
   items: CourseItem[];
 }
 
+export interface SocialContact {
+  url: string;
+  description: LocalizedText;
+}
+
+export interface ContactContent {
+  description: LocalizedText;
+  github: SocialContact;
+  linkedin: SocialContact;
+}
+
 interface RawSkill {
   name: string;
   color: string;
@@ -69,6 +80,12 @@ interface RawCourseItem {
 
 interface RawCoursesContent {
   items: RawCourseItem[];
+}
+
+interface RawContactContent {
+  description: LocalizedText;
+  github: SocialContact;
+  linkedin: SocialContact;
 }
 
 @Injectable({
@@ -110,6 +127,10 @@ export class ContentService {
         })),
       })),
     );
+  }
+
+  getContact() {
+    return this.http.get<RawContactContent>('/content/contact.json');
   }
 
   private toSkillColor(color: string): SkillColor {
