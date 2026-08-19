@@ -1,0 +1,33 @@
+<nav class="navbar" [class.is-expanded]="menuOpen()" [attr.aria-label]="ui.copy().navigation.home">
+  <button
+    class="menu-button"
+    type="button"
+    [attr.aria-expanded]="menuOpen()"
+    [attr.aria-label]="ui.copy().language.menu"
+    (click)="toggleMenu()"
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </button>
+
+  <div class="nav-links" aria-label="Primary navigation">
+    <a [class.is-active]="activeSection() === 'home'" [routerLink]="['/', languageService.currentLanguage()]" fragment="home" (click)="closeMenu()">{{ ui.copy().navigation.home }}</a>
+    <a [class.is-active]="activeSection() === 'about'" [routerLink]="['/', languageService.currentLanguage()]" fragment="about" (click)="closeMenu()">{{ ui.copy().navigation.about }}</a>
+    <a [class.is-active]="activeSection() === 'courses'" [routerLink]="['/', languageService.currentLanguage()]" fragment="courses" (click)="closeMenu()">{{ ui.copy().navigation.courses }}</a>
+    <a [class.is-active]="activeSection() === 'contact'" [routerLink]="['/', languageService.currentLanguage()]" fragment="contact" (click)="closeMenu()">{{ ui.copy().navigation.contact }}</a>
+  </div>
+
+  <div class="language-switcher" [attr.aria-label]="ui.copy().language.select" role="group">
+    <button
+      type="button"
+      [attr.aria-pressed]="languageService.currentLanguage() === 'en'"
+      (click)="setLanguage('en')"
+    >EN</button>
+    <button
+      type="button"
+      [attr.aria-pressed]="languageService.currentLanguage() === 'es'"
+      (click)="setLanguage('es')"
+    >ES</button>
+  </div>
+</nav>

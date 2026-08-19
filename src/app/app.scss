@@ -1,0 +1,10 @@
+.site-header {
+	position: relative;
+	z-index: 1;
+	padding-top: var(--space-4);
+}
+
+.site-header__inner {
+	display: flex;
+	justify-content: center;
+}

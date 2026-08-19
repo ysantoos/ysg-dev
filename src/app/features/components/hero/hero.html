@@ -1,15 +1,16 @@
 @if (hero$ | async; as hero) {
-  <section class="hero">
+  <section class="hero" id="home">
+    <div class="hero__inner site-container">
+      <h1>{{ hero.name }}</h1>
 
-    <h1>{{ hero.name }}</h1>
-
-    <p>
+      <p class="hero__subtitle">
       {{ hero.subtitle[languageService.currentLanguage()] }}
-    </p>
+      </p>
 
-    <blockquote>
-      {{ hero.quote[languageService.currentLanguage()] }}
-    </blockquote>
+      <blockquote>
+        {{ hero.quote[languageService.currentLanguage()] }}
+      </blockquote>
+    </div>
 
   </section>
 }

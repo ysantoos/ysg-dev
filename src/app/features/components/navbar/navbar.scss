@@ -1,0 +1,136 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 40rem;
+  min-height: 2.9rem;
+  padding: 0.34rem 0.5rem 0.34rem 0.85rem;
+  margin-inline: auto;
+  color: var(--color-ink);
+  background: var(--color-surface-light);
+  border-radius: 999px;
+  box-shadow: 0 0.35rem 0.8rem rgb(0 0 0 / 10%);
+}
+
+.nav-links,
+.language-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.45rem);
+}
+
+.nav-links a {
+  color: inherit;
+  font-size: 0.62rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links .is-active {
+  color: var(--color-accent-orange);
+}
+
+.language-switcher {
+  flex-shrink: 0;
+  gap: 0.1rem;
+  margin-left: 0.5rem;
+  padding: 0.16rem;
+  background: var(--color-surface-soft);
+  border-radius: 999px;
+}
+
+.language-switcher button {
+  min-width: 1.38rem;
+  min-height: 1.38rem;
+  padding: 0;
+  color: var(--color-muted);
+  font: inherit;
+  font-size: 0.58rem;
+  font-weight: 800;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.language-switcher button[aria-pressed='true'] {
+  color: var(--color-surface-light);
+  background: var(--color-accent-orange);
+}
+
+.menu-button {
+  display: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent-orange);
+  outline-offset: 3px;
+}
+
+@media (max-width: 42rem) {
+  .navbar {
+    position: relative;
+    max-width: none;
+    min-height: 2.15rem;
+    padding: 0.28rem 0.38rem 0.28rem 0.75rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex: initial;
+  }
+
+  .navbar.is-expanded {
+    border-radius: 1.1rem 1.1rem 0.7rem 0.7rem;
+  }
+
+  .navbar.is-expanded .nav-links {
+    position: absolute;
+    top: calc(100% - 0.15rem);
+    right: 0;
+    left: 0;
+    display: grid;
+    gap: 0.85rem;
+    padding: 0.9rem 1rem 1rem;
+    background: var(--color-surface-light);
+    border-radius: 0 0 0.7rem 0.7rem;
+    box-shadow: 0 0.45rem 0.8rem rgb(0 0 0 / 12%);
+  }
+
+  .navbar.is-expanded .nav-links a {
+    font-size: 0.6rem;
+  }
+
+  .menu-button {
+    display: grid;
+    gap: 0.16rem;
+    width: 1rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 0.72rem;
+    height: 0.1rem;
+    background: var(--color-ink);
+    border-radius: 1px;
+  }
+}

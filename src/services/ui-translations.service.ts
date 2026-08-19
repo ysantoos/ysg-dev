@@ -1,0 +1,49 @@
+import { Injectable, computed, inject } from '@angular/core';
+import { Language, LanguageService } from './language.service';
+
+export interface UiCopy {
+  navigation: {
+    home: string;
+    about: string;
+    courses: string;
+    contact: string;
+  };
+  language: {
+    menu: string;
+    select: string;
+  };
+}
+
+const UI_COPY: Record<Language, UiCopy> = {
+  en: {
+    navigation: {
+      home: 'Home',
+      about: 'About',
+      courses: 'Courses',
+      contact: 'Contact',
+    },
+    language: {
+      menu: 'Open navigation menu',
+      select: 'Select language',
+    },
+  },
+  es: {
+    navigation: {
+      home: 'Inicio',
+      about: 'Acerca',
+      courses: 'Cursos',
+      contact: 'Contacto',
+    },
+    language: {
+      menu: 'Abrir menu de navegacion',
+      select: 'Seleccionar idioma',
+    },
+  },
+};
+
+@Injectable({ providedIn: 'root' })
+export class UiTranslationsService {
+  private readonly languageService = inject(LanguageService);
+
+  readonly copy = computed(() => UI_COPY[this.languageService.currentLanguage()]);
+}

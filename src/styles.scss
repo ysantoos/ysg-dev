@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+	--color-bg: #1f1e27;
+	--color-bg-deep: #1b1a21;
+	--color-surface: #302f39;
+	--color-surface-soft: #e9e9eb;
+	--color-surface-light: #fbfbfc;
+	--color-text: #faf9fc;
+	--color-muted: #9895a2;
+	--color-ink: #17161c;
+	--color-border: #403e49;
+	--color-accent-orange: #ff5c45;
+	--skill-orange: #ff5c45;
+	--skill-blue: #318cf4;
+	--skill-purple: #a43cf1;
+	--skill-green: #2ee98a;
+	--skill-cyan: #00b5df;
+	--font-display: 'Archivo', sans-serif;
+	--font-mono: 'IBM Plex Mono', monospace;
+	--content-max-width: 68rem;
+	--page-padding: clamp(0.85rem, 3vw, 1.6rem);
+	--space-1: 0.5rem;
+	--space-2: 1rem;
+	--space-3: 1.5rem;
+	--space-4: 2rem;
+	--space-5: 3rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 20rem;
+	scroll-behavior: auto;
+	background: var(--color-bg-deep);
+}
+
+body {
+	min-width: 20rem;
+	min-height: 100vh;
+	margin: 0;
+	color: var(--color-text);
+	font-family: var(--font-display);
+	background-color: var(--color-bg);
+	background-image: radial-gradient(rgb(255 255 255 / 13%) 0.7px, transparent 0.8px);
+	background-size: 1.45rem 1.45rem;
+}
+
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	font: inherit;
+}
+
+.site-container {
+	width: min(100% - (var(--page-padding) * 2), var(--content-max-width));
+	margin-inline: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
