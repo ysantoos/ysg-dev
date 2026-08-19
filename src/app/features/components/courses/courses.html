@@ -1,0 +1,34 @@
+<section class="courses" id="courses">
+  <div class="site-container courses__inner">
+    <h2 class="courses__title">
+      <span class="courses__index">02 //</span>
+      {{ ui.copy().sections.coursesAndCerts }}
+    </h2>
+
+    @if (vm$ | async; as vm) {
+      @if (vm.loading) {
+        <p class="courses__status">...</p>
+      } @else if (vm.error) {
+        <p class="courses__status">{{ ui.copy().content.unavailable }}</p>
+      } @else if (vm.courses; as courses) {
+        <ul class="courses__list" role="list">
+          @for (course of courses; track trackCourse(course)) {
+            <li class="courses__item">
+              <span class="courses__marker" [ngClass]="markerVariant(course.color)" aria-hidden="true">
+                {{ markerLabel(course.title) }}
+              </span>
+
+              <div class="courses__content">
+                <h3 class="courses__course-title">{{ course.title }}</h3>
+                <p class="courses__meta">
+                  <span>{{ course.institution }}</span>
+                  <span class="courses__year">{{ course.year }}</span>
+                </p>
+              </div>
+            </li>
+          }
+        </ul>
+      }
+    }
+  </div>
+</section>

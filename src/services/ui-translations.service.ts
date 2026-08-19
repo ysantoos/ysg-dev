@@ -11,6 +11,7 @@ export interface UiCopy {
   sections: {
     aboutMe: string;
     coreToolkit: string;
+    coursesAndCerts: string;
   };
   content: {
     unavailable: string;
@@ -32,6 +33,7 @@ const UI_COPY: Record<Language, UiCopy> = {
     sections: {
       aboutMe: 'ABOUT_ME',
       coreToolkit: 'CORE_TOOLKIT',
+      coursesAndCerts: 'COURSES_&_CERTS',
     },
     content: {
       unavailable: 'Content unavailable.',
@@ -51,6 +53,7 @@ const UI_COPY: Record<Language, UiCopy> = {
     sections: {
       aboutMe: 'SOBRE_MI',
       coreToolkit: 'HERRAMIENTAS',
+      coursesAndCerts: 'CURSOS_Y_CERTS',
     },
     content: {
       unavailable: 'Contenido no disponible.',

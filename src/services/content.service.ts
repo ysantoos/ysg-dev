@@ -35,6 +35,17 @@ export interface SkillsContent {
   categories: SkillCategory[];
 }
 
+export interface CourseItem {
+  title: string;
+  institution: string;
+  year: number;
+  color: SkillColor;
+}
+
+export interface CoursesContent {
+  items: CourseItem[];
+}
+
 interface RawSkill {
   name: string;
   color: string;
@@ -47,6 +58,17 @@ interface RawSkillCategory {
 
 interface RawSkillsContent {
   categories: RawSkillCategory[];
+}
+
+interface RawCourseItem {
+  title: string;
+  institution: string;
+  year: number;
+  color: string;
+}
+
+interface RawCoursesContent {
+  items: RawCourseItem[];
 }
 
 @Injectable({
@@ -72,6 +94,19 @@ export class ContentService {
             name: skill.name,
             color: this.toSkillColor(skill.color),
           })),
+        })),
+      })),
+    );
+  }
+
+  getCourses() {
+    return this.http.get<RawCoursesContent>('/content/courses.json').pipe(
+      map((content): CoursesContent => ({
+        items: content.items.map((item) => ({
+          title: item.title,
+          institution: item.institution,
+          year: item.year,
+          color: this.toSkillColor(item.color),
         })),
       })),
     );
