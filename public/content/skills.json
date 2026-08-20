@@ -6,9 +6,26 @@
         "es": "Backend"
       },
       "skills": [
-        { "name": "Java", "color": "green" },
-        { "name": ".NET", "color": "blue" },
-        { "name": "PostgreSQL", "color": "blue" }
+        {
+          "name": ".NET C#",
+          "color": "green"
+        },
+        {
+          "name": "TypeScript / JavaScript",
+          "color": "blue"
+        },
+        {
+          "name": "NodeJS",
+          "color": "cyan"
+        },
+        {
+          "name": "SQL Server",
+          "color": "blue"
+        },
+        {
+          "name": "PostgreSQL",
+          "color": "purple"
+        }
       ]
     },
     {
@@ -17,22 +34,36 @@
         "es": "DevOps y Nube"
       },
       "skills": [
-        { "name": "Java", "color": "green" },
-        { "name": ".NET", "color": "blue" },
-        { "name": "PostgreSQL", "color": "blue" }
+        {
+          "name": "Java",
+          "color": "green"
+        },
+        {
+          "name": ".NET",
+          "color": "blue"
+        },
+        {
+          "name": "PostgreSQL",
+          "color": "blue"
+        }
       ]
-    },       
+    },
     {
       "name": {
         "en": "Frontend",
         "es": "Frontend"
       },
       "skills": [
-        { "name": "Angular", "color": "orange" },
-        { "name": "TypeScript", "color": "purple" }
+        {
+          "name": "Angular",
+          "color": "orange"
+        },
+        {
+          "name": "TypeScript",
+          "color": "purple"
+        }
       ]
     },
- 
     {
       "name": {
         "en": "AI",
