@@ -35,16 +35,20 @@
       },
       "skills": [
         {
-          "name": "Java",
+          "name": "Azure",
           "color": "green"
         },
         {
-          "name": ".NET",
+          "name": "Azure DevOps",
           "color": "blue"
         },
         {
           "name": "PostgreSQL",
-          "color": "blue"
+          "color": "green"
+        },
+        {
+          "name": "Docker",
+          "color": "orange"
         }
       ]
     },
@@ -61,6 +65,10 @@
         {
           "name": "TypeScript",
           "color": "purple"
+        },
+        {
+          "name": "ReactJS",
+          "color": "green"
         }
       ]
     },
