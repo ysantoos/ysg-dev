@@ -77,7 +77,16 @@
         "en": "AI",
         "es": "IA"
       },
-      "skills": []
+      "skills": [
+        {
+          "name": "Spec-Driven Development (SDD)",
+          "color": "orange"
+        },
+        {
+          "name": " GitHub Copilot",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": {
