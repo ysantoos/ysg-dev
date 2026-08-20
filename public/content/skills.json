@@ -69,6 +69,18 @@
         {
           "name": "ReactJS",
           "color": "green"
+        },
+        {
+          "name": "HTML",
+          "color": "cyan"
+        },
+        {
+          "name": "CSS",
+          "color": "orange"
+        },
+        {
+          "name": "Unit-Test",
+          "color": "blue"
         }
       ]
     },
