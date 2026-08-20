@@ -27,7 +27,7 @@ export interface Skill {
 }
 
 export interface SkillCategory {
-  name: string;
+  name: LocalizedText;
   skills: Skill[];
 }
 
@@ -63,7 +63,7 @@ interface RawSkill {
 }
 
 interface RawSkillCategory {
-  name: string;
+  name: LocalizedText;
   skills: RawSkill[];
 }
 

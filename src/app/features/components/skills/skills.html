@@ -8,9 +8,9 @@
       <p class="skills__status">{{ ui.copy().content.unavailable }}</p>
     } @else if (vm.skills; as skills) {
       <div class="skills__categories">
-        @for (category of skills.categories; track category.name) {
+        @for (category of skills.categories; track category.name.en) {
           <div class="skills__category">
-            <h4 class="skills__category-name">{{ category.name }}</h4>
+            <h4 class="skills__category-name">{{ categoryName(category.name) }}</h4>
             <ul class="skills__list" role="list">
               @for (skill of category.skills; track skill.name) {
                 <li class="skills__item">

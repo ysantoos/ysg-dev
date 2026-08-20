@@ -6,12 +6,10 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-
   - name: "portfolio"
     label: "Portfolio"
 
     files:
-
       # ========================================
       # HERO
       # ========================================
@@ -21,7 +19,6 @@ collections:
         file: "public/content/hero.json"
 
         fields:
-
           - label: "Nombre"
             name: "name"
             widget: "string"
@@ -31,7 +28,6 @@ collections:
             widget: "object"
 
             fields:
-
               - label: "English"
                 name: "en"
                 widget: "string"
@@ -45,7 +41,6 @@ collections:
             widget: "object"
 
             fields:
-
               - label: "English"
                 name: "en"
                 widget: "text"
@@ -53,7 +48,6 @@ collections:
               - label: "Español"
                 name: "es"
                 widget: "text"
-
 
       # ========================================
       # ABOUT ME
@@ -64,13 +58,11 @@ collections:
         file: "public/content/about.json"
 
         fields:
-
           - label: "Descripción"
             name: "description"
             widget: "object"
 
             fields:
-
               - label: "English"
                 name: "en"
                 widget: "text"
@@ -78,7 +70,6 @@ collections:
               - label: "Español"
                 name: "es"
                 widget: "text"
-
 
       # ========================================
       # CORE TOOLKIT
@@ -89,23 +80,35 @@ collections:
         file: "public/content/skills.json"
 
         fields:
-
           - label: "Categorías"
             name: "categories"
             widget: "list"
 
             fields:
-
+              # El nombre de la categoría es bilingüe.
+              # Ejemplo:
+              # en: Architecture
+              # es: Arquitectura
               - label: "Categoría"
                 name: "name"
-                widget: "string"
+                widget: "object"
+
+                fields:
+                  - label: "English"
+                    name: "en"
+                    widget: "string"
+
+                  - label: "Español"
+                    name: "es"
+                    widget: "string"
 
               - label: "Skills"
                 name: "skills"
                 widget: "list"
 
                 fields:
-
+                  # Los nombres de las tecnologías no se traducen.
+                  # Ejemplos: Angular, TypeScript, Docker, PostgreSQL.
                   - label: "Nombre"
                     name: "name"
                     widget: "string"
@@ -115,7 +118,6 @@ collections:
                     widget: "select"
 
                     options:
-
                       - label: "Orange"
                         value: "orange"
 
@@ -131,7 +133,6 @@ collections:
                       - label: "Cyan"
                         value: "cyan"
 
-
       # ========================================
       # COURSES & CERTIFICATIONS
       # ========================================
@@ -141,13 +142,11 @@ collections:
         file: "public/content/courses.json"
 
         fields:
-
           - label: "Cursos y certificaciones"
             name: "items"
             widget: "list"
 
             fields:
-
               - label: "Título"
                 name: "title"
                 widget: "string"
@@ -166,7 +165,6 @@ collections:
                 widget: "select"
 
                 options:
-
                   - label: "Orange"
                     value: "orange"
 
@@ -182,7 +180,6 @@ collections:
                   - label: "Cyan"
                     value: "cyan"
 
-
       # ========================================
       # GET IN TOUCH
       # ========================================
@@ -192,13 +189,11 @@ collections:
         file: "public/content/contact.json"
 
         fields:
-
           - label: "Descripción"
             name: "description"
             widget: "object"
 
             fields:
-
               - label: "English"
                 name: "en"
                 widget: "text"
@@ -212,7 +207,6 @@ collections:
             widget: "object"
 
             fields:
-
               - label: "URL"
                 name: "url"
                 widget: "string"
@@ -222,7 +216,6 @@ collections:
                 widget: "object"
 
                 fields:
-
                   - label: "English"
                     name: "en"
                     widget: "string"
@@ -236,7 +229,6 @@ collections:
             widget: "object"
 
             fields:
-
               - label: "URL"
                 name: "url"
                 widget: "string"
@@ -246,7 +238,6 @@ collections:
                 widget: "object"
 
                 fields:
-
                   - label: "English"
                     name: "en"
                     widget: "string"

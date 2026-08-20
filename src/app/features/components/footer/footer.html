@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="site-container footer__inner">
+    <ul class="footer__badges" role="list" [attr.aria-label]="ui.copy().footer.badgesLabel">
+      @for (badge of badges; track badge.label) {
+        <li class="footer__badge" [class.footer__badge--dark]="badge.tone === 'dark'" [class.footer__badge--orange]="badge.tone === 'orange'" [class.footer__badge--blue]="badge.tone === 'blue'" [class.footer__badge--purple]="badge.tone === 'purple'" [class.footer__badge--cyan]="badge.tone === 'cyan'" [class.footer__badge--red]="badge.tone === 'red'">
+          {{ badge.label }}
+        </li>
+      }
+    </ul>
+
+    <p class="footer__copy">{{ ui.copy().footer.copy }}</p>
+  </div>
+</footer>

@@ -19,6 +19,10 @@ export interface UiCopy {
     githubAriaLabel: string;
     linkedinAriaLabel: string;
   };
+  footer: {
+    badgesLabel: string;
+    copy: string;
+  };
   content: {
     unavailable: string;
   };
@@ -47,6 +51,10 @@ const UI_COPY: Record<Language, UiCopy> = {
       githubAriaLabel: 'Visit GitHub profile',
       linkedinAriaLabel: 'Visit LinkedIn profile',
     },
+    footer: {
+      badgesLabel: 'Footer retro badges',
+      copy: '© 1992-2026 Yeison Garcia Santos. All rights reserved. Best viewed at 1024x768 resolution.',
+    },
     content: {
       unavailable: 'Content unavailable.',
     },
@@ -72,6 +80,10 @@ const UI_COPY: Record<Language, UiCopy> = {
       linksLabel: 'Canales principales de contacto',
       githubAriaLabel: 'Visitar perfil de GitHub',
       linkedinAriaLabel: 'Visitar perfil de LinkedIn',
+    },
+    footer: {
+      badgesLabel: 'Insignias retro del pie de pagina',
+      copy: '© 1992-2026 Yeison Garcia Santos. Todos los derechos reservados. Mejor visto a 1024x768.',
     },
     content: {
       unavailable: 'Contenido no disponible.',

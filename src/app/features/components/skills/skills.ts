@@ -1,7 +1,8 @@
 import { AsyncPipe, NgClass } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { catchError, map, of, startWith } from 'rxjs';
-import { ContentService, SkillColor, SkillsContent } from '../../../../services/content.service';
+import { ContentService, LocalizedText, SkillColor, SkillsContent } from '../../../../services/content.service';
+import { LanguageService } from '../../../../services/language.service';
 import { UiTranslationsService } from '../../../../services/ui-translations.service';
 
 interface SkillsViewModel {
@@ -20,6 +21,7 @@ interface SkillsViewModel {
 export class Skills {
   private readonly contentService = inject(ContentService);
 
+  readonly languageService = inject(LanguageService);
   readonly ui = inject(UiTranslationsService);
 
   readonly vm$ = this.contentService.getSkills().pipe(
@@ -42,5 +44,9 @@ export class Skills {
       default:
         return 'skill-badge--blue';
     }
+  }
+
+  categoryName(name: LocalizedText): string {
+    return name[this.languageService.currentLanguage()];
   }
 }
