@@ -7,15 +7,15 @@
       "color": "orange"
     },
     {
-      "title": "Full Stack Web Development",
-      "institution": "Coursera / Meta",
-      "year": 2023,
+      "title": "Docker for .NET Developer",
+      "institution": "Udemy",
+      "year": 2025,
       "color": "blue"
     },
     {
-      "title": "Advanced React & State Architecture",
-      "institution": "Udemy / Frontend Masters",
-      "year": 2023,
+      "title": "Curso de Introducción a la Nube con Azure",
+      "institution": "Platzi",
+      "year": 2021,
       "color": "purple"
     }
   ]
