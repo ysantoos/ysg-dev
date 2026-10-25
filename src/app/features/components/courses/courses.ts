@@ -23,7 +23,11 @@ export class Courses {
   readonly ui = inject(UiTranslationsService);
 
   readonly vm$ = this.contentService.getCourses().pipe(
-    map((content): CoursesViewModel => ({ courses: content.items, loading: false, error: false })),
+    map((content): CoursesViewModel => ({
+      courses: [...content.items].sort((a, b) => b.year - a.year),
+      loading: false,
+      error: false,
+    })),
     startWith({ courses: null, loading: true, error: false }),
     catchError(() => of({ courses: null, loading: false, error: true })),
   );
