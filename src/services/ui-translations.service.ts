@@ -18,6 +18,7 @@ export interface UiCopy {
     linksLabel: string;
     githubAriaLabel: string;
     linkedinAriaLabel: string;
+    leetcodeAriaLabel: string;
   };
   footer: {
     badgesLabel: string;
@@ -50,6 +51,7 @@ const UI_COPY: Record<Language, UiCopy> = {
       linksLabel: 'Primary contact links',
       githubAriaLabel: 'Visit GitHub profile',
       linkedinAriaLabel: 'Visit LinkedIn profile',
+      leetcodeAriaLabel: 'Visit LeetCode profile',
     },
     footer: {
       badgesLabel: 'Footer retro badges',
@@ -80,6 +82,7 @@ const UI_COPY: Record<Language, UiCopy> = {
       linksLabel: 'Canales principales de contacto',
       githubAriaLabel: 'Visitar perfil de GitHub',
       linkedinAriaLabel: 'Visitar perfil de LinkedIn',
+      leetcodeAriaLabel: 'Visitar perfil de LeetCode',
     },
     footer: {
       badgesLabel: 'Insignias retro del pie de pagina',

@@ -53,6 +53,25 @@
               <span class="contact__meta">{{ contact.linkedin.description[languageService.currentLanguage()] }}</span>
             </span>
           </a>
+
+          <a
+            class="contact__link"
+            role="listitem"
+            [href]="contact.leetcode.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="ui.copy().contact.leetcodeAriaLabel"
+          >
+            <span class="contact__icon contact__icon--leetcode" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path fill="currentColor" d="M16.45 16.15a.9.9 0 0 1-.9.9h-5.1a3.9 3.9 0 0 1-2.78-1.15l-1.8-1.8a3.93 3.93 0 0 1 0-5.55l4.35-4.35a.9.9 0 0 1 1.27 1.28L7.14 9.83a2.13 2.13 0 0 0 0 3.01l1.8 1.8a2.1 2.1 0 0 0 1.51.63h5.1a.9.9 0 0 1 .9.88Zm-1.02-8.8h-4.1a.9.9 0 0 0 0 1.8h4.1a.9.9 0 0 0 0-1.8Zm3.35 3.55H11.3a.9.9 0 0 0 0 1.8h7.48a.9.9 0 0 0 0-1.8Z"/>
+              </svg>
+            </span>
+            <span class="contact__copy">
+              <span class="contact__platform">LeetCode</span>
+              <span class="contact__meta">{{ contact.leetcode.description[languageService.currentLanguage()] }}</span>
+            </span>
+          </a>
         </div>
       }
     }

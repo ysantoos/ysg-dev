@@ -55,6 +55,7 @@ export interface ContactContent {
   description: LocalizedText;
   github: SocialContact;
   linkedin: SocialContact;
+  leetcode: SocialContact;
 }
 
 interface RawSkill {
@@ -86,6 +87,7 @@ interface RawContactContent {
   description: LocalizedText;
   github: SocialContact;
   linkedin: SocialContact;
+  leetcode: SocialContact;
 }
 
 @Injectable({
