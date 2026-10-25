@@ -105,14 +105,36 @@
         "en": "Architecture",
         "es": "Arquitectura"
       },
-      "skills": []
+      "skills": [
+        {
+          "name": "MicroServices",
+          "color": "blue"
+        },
+        {
+          "name": "Event-Driven Architecture",
+          "color": "purple"
+        },
+        {
+          "name": "Modular monolith",
+          "color": "orange"
+        }
+      ]
     },
     {
       "name": {
         "en": "Others",
         "es": "Otros"
       },
-      "skills": []
+      "skills": [
+        {
+          "name": "SCRUM",
+          "color": "blue"
+        },
+        {
+          "name": "GIT",
+          "color": "blue"
+        }
+      ]
     }
   ]
 }
