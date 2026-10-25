@@ -125,7 +125,16 @@
         "en": "Others",
         "es": "Otros"
       },
-      "skills": []
+      "skills": [
+        {
+          "name": "SCRUM",
+          "color": "blue"
+        },
+        {
+          "name": "GIT",
+          "color": "blue"
+        }
+      ]
     }
   ]
 }
