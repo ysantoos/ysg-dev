@@ -1,6 +1,6 @@
 {
-    "description": {
-        "en": "I'm a software developer who enjoys turning complex problems into clean, maintainable solutions. I work across the stack, care about good architecture, and I'm always looking for better ways to build things.",
-        "es": "Soy desarrollador de software y disfruto convirtiendo problemas complejos en soluciones limpias y mantenibles. Trabajo en diferentes áreas del stack, me interesa la buena arquitectura y siempre busco mejores formas de construir software."
-    }
+  "description": {
+    "en": "I build enterprise software with a product mindset, translating business needs into simple systems that evolve through real-world feedback. I use AI strategically to apply architectural judgment with flexibility across object-oriented environments, without letting the programming language become a barrier. I design for change from the outset and see code quality as a catalyst for speed, not a constraint.",
+    "es": "Desarrollo software empresarial con una mentalidad centrada en el producto, traduciendo las necesidades del negocio en sistemas sencillos que evolucionan gracias a la retroalimentación del mundo real. Utilizo la IA estratégicamente para aplicar criterios arquitectónicos con flexibilidad en entornos orientados a objetos, sin que el lenguaje de programación se convierta en una barrera. Diseño pensando en el cambio desde el principio y considero la calidad del código como un catalizador de la velocidad, no como una limitación."
+  }
 }
